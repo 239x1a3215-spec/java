@@ -1,20 +1,31 @@
-package day1;
+package day2;
 
 public class Student {
-	String StdName="Scott";
-	int Regnum=101;
-	String Branch="CSE";
-public static void main(String[] args) {
-	//creating the first object
+	// Declaration of states
+	String StdName;
+	int RegNum;
+	String Branch;
+	double percentage;
+	public static void main(String[] args) {
 	Student S1=new Student();
-	System.out.println("Student Name : "+S1.StdName);
-	System.out.println("Register Num : "+S1.Regnum);
+	S1.StdName="Scott";
+	S1.RegNum=1001;
+	S1.Branch="CSE";
+	S1.percentage=89.9;
+	System.out.println("Student Name :"+S1.StdName);
+	System.out.println(" Register Number :"+S1.RegNum);
 	System.out.println("Branch :"+S1.Branch);
-	//creating the second object
+	System.out.println("percentage :"+S1.percentage);
 	Student S2=new Student();
-	System.out.println("Student Name : "+S2.StdName);
-	System.out.println("Register Num : "+S2.Regnum);
-	System.out.println("Branch :"+S2.Branch);
+	S2.StdName="Siri";
+	S2.RegNum=1234;
+	S2.Branch="CSD";
+	S2.percentage=90.9;
+	System.out.println("Student Name :" +S2.StdName);
+	System.out.println("Register Number :" +S2.RegNum);
+	System.out.println("Branch :" +S2.Branch);
+	System.out.println("percentage :" +S2.percentage);
 	
+
 }
 }
